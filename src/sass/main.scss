@@ -10,6 +10,11 @@
     src: url('../fonts/Nexa Bold.otf') format('otf');
 }
 
+@font-face {
+    font-family: 'PtSans Bold';
+    src: url("../fonts/PTSans-Bold.ttf") format('ttf');
+}
+
 .header{
     width: 100%;
     background:#f3f3f3;
@@ -67,14 +72,37 @@
 .select-img{
     padding-left: 14px;
 }
-// повторить стрелки
-//.qwer{
-//    font-size: 25px;
-//    color: #5b169f;
-//    width: 50px;
-//    height: 6px;
-//    transform: rotate(90deg);
-//}
+
+i {
+    //border: solid black;
+    //border-width: 0 3px 3px 0;
+    //display: inline-block;
+    //padding: 3px;
+
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    //border-color: #5b169f;
+    border: solid #5b169f;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.arrow-up{
+    margin-top: -8px ;
+    margin-bottom: -7px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid #5b169f;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
 
 form{
     margin-left: 16px;
@@ -100,8 +128,7 @@ form{
 
 .img-clock{
     position: relative;
-    //top: 13px;
-    //right: 40px;
+
 }
 
 .img-clocks{
@@ -110,3 +137,37 @@ form{
     top: 13px;
     right: 25px;
 }
+.nav{
+    margin-top: 40px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 164px;
+    height: 113px;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    padding-top: 20px;
+    font-size: 17px;
+    font-family: "PtSans Bold",sans-serif;
+    font-weight: bold;
+    color: #707070;
+    //border-bottom-color: #701dbb;
+    //border-bottom-style: solid;
+    border-bottom: 10px solid #701dbb ;
+
+}
+.fas {
+    color: #7d7d7d;
+    margin-bottom: 20px ;
+    font-size: 22px;
+}
+
