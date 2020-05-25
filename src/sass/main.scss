@@ -14,13 +14,20 @@
     font-family: 'PtSans Bold';
     src: url("../fonts/PTSans-Bold.ttf") format('ttf');
 }
+@font-face {
+    font-family: 'NexaXBold';
+    src: url("../fonts/NexaXBold.otf") format('otf');
+}
+
+@font-face {
+    font-family: 'NexaRegular';
+    src: url("../fonts/NexaRegular.otf") format('otf');
+}
 
 .header{
     width: 100%;
     background:#f3f3f3;
     padding-top: 41px;
-    
-    
 }
 
 .container{
@@ -73,14 +80,6 @@
     padding-left: 14px;
 }
 
-i {
-    //border: solid black;
-    //border-width: 0 3px 3px 0;
-    //display: inline-block;
-    //padding: 3px;
-
-}
-
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
@@ -119,7 +118,7 @@ form{
     border: none;
     -webkit-box-shadow: -2px 12px 25px -15px rgba(0,0,0,0.69);
     -moz-box-shadow: -2px 12px 25px -15px rgba(0,0,0,0.69);
-    box-shadow: -2px 12px 25px -15px rgba(0,0,0,0.69)
+    box-shadow: -2px 12px 25px -15px rgba(0,0,0,0.69);
     //-webkit-box-shadow: -5px 16px 43px -28px rgba(0,0,0,0.69);
     //-moz-box-shadow: -5px 16px 43px -28px rgba(0,0,0,0.69);
     //box-shadow: -5px 16px 43px -28px rgba(0,0,0,0.69);
@@ -139,6 +138,7 @@ form{
 }
 .nav{
     margin-top: 40px;
+
 }
 
 .nav-menu{
@@ -146,6 +146,7 @@ form{
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+
 }
 .menu-item {
     display: flex;
@@ -153,7 +154,7 @@ form{
     align-items: center;
     width: 164px;
     height: 113px;
-    background: #ffffff;
+    background: #fefefe;
     border: 1px solid #d4d4d4;
     padding-top: 20px;
     font-size: 17px;
@@ -163,6 +164,7 @@ form{
     //border-bottom-color: #701dbb;
     //border-bottom-style: solid;
     border-bottom: 10px solid #701dbb ;
+    z-index: 2;
 
 }
 .fas {
@@ -171,3 +173,43 @@ form{
     font-size: 22px;
 }
 
+.background{
+    background: url("../img/bridge.png") center center/ contain no-repeat;
+    height: 640px;
+    padding: 238px 178px;
+    margin-top: -40px;
+}
+
+.text-container{
+    width: 567px;
+    margin: 0 auto;
+
+
+}
+
+.title{
+    font-family: 'NexaXBold', sans-serif;
+    font-size: 47px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sub-title {
+    font-family: 'NexaRegular', sans-serif;
+    margin-top: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.round{
+    width: 140px;
+    height: 140px;
+    background: #451a4a;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
