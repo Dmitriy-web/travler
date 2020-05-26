@@ -24,6 +24,10 @@
     src: url("../fonts/NexaRegular.otf") format('otf');
 }
 
+@font-face {
+    font-family: 'NexaBook';
+    src: url("../fonts/NexaBook.otf") format('otf');
+}
 .header{
     width: 100%;
     background:#f3f3f3;
@@ -212,4 +216,62 @@ form{
     align-items: center;
     margin: 0 auto;
     margin-top: 10px;
+}
+
+
+.anywhere{
+    background: #2d2d2d;
+    width: 100%;
+    margin-top: -24px;
+    padding: 55px 108px;
+}
+.anywhere-title{
+    font-family: "NexaBook", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.anywhere-sub-title{
+    font-family: 'NexaBold', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    color: #a161db;
+}
+.icons-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.divider-length{
+    width: 140px;
+    height: 3px;
+    background: #6d6d6d;
+    margin-left: 44px;
+    margin-right: 46px;
+}
+
+.wrapper-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+.title-text{
+    font-family: 'NexaBook',sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sub-title-text{
+    width: 300px;
+    text-align: justify;
+    margin-top: 24px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 22px ;
+    color: #ffffff;
 }
