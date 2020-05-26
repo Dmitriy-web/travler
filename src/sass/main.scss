@@ -178,10 +178,10 @@ form{
 }
 
 .background{
-    background: url("../img/bridge.png") center center/ contain no-repeat;
+    background: url("../img/bridge.png") center center/ cover no-repeat;
     height: 640px;
     padding: 238px 178px;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 .text-container{
@@ -252,6 +252,7 @@ form{
     background: #6d6d6d;
     margin-left: 44px;
     margin-right: 46px;
+
 }
 
 .wrapper-text{
@@ -274,4 +275,60 @@ form{
     font-size: 12px;
     line-height: 22px ;
     color: #ffffff;
+}
+
+.simple{
+    width: 100%;
+    background: #222222;
+    padding-top: 60px;
+
+
+}
+
+.border-simple{
+    border: 50px solid #070707;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: none;
+    width: 1254px;
+    margin: 0 auto;
+    //background: rgb(63,0,132);
+    //background: linear-gradient(90deg, rgba(63,0,132,1) 0%, rgba(113,25,177,0.7651435574229692) 100%, rgba(114,67,143,1) 100%);
+    background: rgb(59,0,130);
+    background: linear-gradient(90deg, rgba(59,0,130,1) 0%, rgba(108,17,174,1) 100%, rgba(143,52,197,1) 100%);
+}
+
+
+.simple-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 106px;
+
+}
+
+
+.divider-length_white{
+    width: 180px;
+    height: 4px;
+    background: #ffffff;
+}
+
+.simple-title{
+    font-family: 'NexaBook', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 53px;
+
+}
+
+.simple-sub-title{
+    font-family: 'NexaBold', sans-serif;
+    font-size: 18px;
+    color: #782fb8;
+    text-align: center;
+    margin-top: 21px;
+    text-shadow: 1px 3px 5px rgba(119, 119, 119, 1);
+    padding-bottom: 100px;
 }
