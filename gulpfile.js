@@ -15,10 +15,11 @@ gulp.task('server', function() {
         }
     });
     gulp.watch("src/*.html").on('change', browserSync.reload);
+
 });
 
 gulp.task('styles', function () {
-    return gulp.src("src/sass/*.scss")
+    return gulp.src("src/sass/**/*.scss")
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({     
         prefix: "",
@@ -31,9 +32,16 @@ gulp.task('styles', function () {
 
 })
 
+gulp.task('script', function () {
+    return gulp.src('src/js/**/*.js')
+        .pipe(gulp.dest("dist/js"))
+        .pipe(browserSync.stream());
+})
+
 gulp.task('watch', function() {
-    gulp.watch("src/sass/*.scss", gulp.parallel('styles'))
+    gulp.watch("src/sass/**/*.scss", gulp.parallel('styles'))
     gulp.watch("src/*.html").on('change', gulp.parallel('html'))
+    gulp.watch('src/js/**/*.js', gulp.parallel('script'))
 });
 
 gulp.task('html', function() {
@@ -66,4 +74,4 @@ gulp.task('images', function() {
 
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'images', 'html'))
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'images', 'html' ,'script'))

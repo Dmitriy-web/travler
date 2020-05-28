@@ -28,6 +28,11 @@
     font-family: 'NexaBook';
     src: url("../fonts/NexaBook.otf") format('otf');
 }
+
+@font-face {
+    font-family: 'PtSans Regular';
+    src: url("../fonts/pt-sans.ttf") format('ttf');
+}
 .header{
     width: 100%;
     background:#f3f3f3;
@@ -331,4 +336,242 @@ form{
     margin-top: 21px;
     text-shadow: 1px 3px 5px rgba(119, 119, 119, 1);
     padding-bottom: 100px;
+}
+
+.team{
+    width: 100%;
+    padding: 82px 0 35px 0;
+    background:#ebebeb ;
+    border-bottom: 5px  solid #914dcf;
+}
+
+.humble-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider-humbler{
+    width: 220px;
+    height: 3px;
+    background: #dedede;
+}
+
+.humble-team{
+    font-family: 'NexaBook', sans-serif;
+    font-size: 36px;
+    color: #717171;
+
+}
+
+.humble-sub-title{
+    font-family: 'NexaBook', sans-serif;
+    text-align: center;
+    font-size: 18px ;
+    color: #717171;
+    margin-top: 20px;
+}
+.photo-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 52px;
+}
+.photo-rotate{
+    height: 210px;
+    width: 220px;
+    transform: rotate(-5deg);
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px -4px rgba(0,0,0,0.75);
+
+}
+
+.rotate{
+    display: block;
+    transform: rotate(5deg);
+}
+
+.photo-contacts{
+    margin-top: 25px;
+}
+
+.photo-name {
+    font-family: 'PtSans Bold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9b9b9b;
+}
+
+.photo-position{
+    font-family: 'PtSans Regular', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #9b9b9b;
+}
+//
+.photo-emblem{
+    position: relative;
+}
+.twitter-emblem{
+    position: absolute;
+    content: '';
+    left: 171px;
+    top: 169px;
+    width: 48px;
+    height: 40px ;
+    background: #8f33c4;
+
+}
+
+.twitter-icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.dots{
+    margin-top: 40px ;
+}
+
+.menu-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.dots-item{
+    width: 10px;
+    height: 10px;
+    //background:#943dc6 ;
+    background: #979797;
+    border-radius: 100%;
+    margin: 0 10px  ;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.card-left{
+    width: 460px;
+    background: #ffffff;
+}
+
+
+.card-right{
+    width: 460px;
+    background: #ffffff;
+}
+.wrapper-plus{
+    width: 30px;
+    height: 30px;
+    background: #8f33c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.plus:before,
+.plus:after {
+    content: "";
+    position:absolute;
+    background:#ffffff;
+}
+.plus:before {
+    left:50%;
+    top:4px;
+    bottom:4px;
+    width:3px;
+    transform:translateX(-50%);
+}
+.plus:after {
+    top:50%;
+    left:4px;
+    right:4px;
+    height:4px;
+    transform:translateY(-50%);
+}
+
+.card-text{
+    margin: 32px 0 0 52px;
+    width: 350px;
+}
+.card-header{
+    font-family: 'NexaBold', sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #252525;
+    font-weight: 700;
+
+}
+.card-title{
+    font-family: 'NexaBold', sans-serif;
+    font-size: 16px;
+    color: #6017a3;
+    margin-top: 23px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 25px;
+
+
+}
+
+.card-title-subtitle{
+    margin-top: 50px;
+    font-family: 'NexaBold',sans-serif;
+    color: #b1b1b1;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.card-bottom{
+    margin-top: 20px;
+    background: #ffffff;
+
+}
+
+.card-bottom-text{
+    padding: 70px 70px 100px 52px;
+
+
+}
+
+.card-bottom-header{
+    font-family: 'NexaBold', sans-serif;
+    font-size: 30px;
+    color: #252525;
+    font-weight: bold;
+}
+
+.card-bottom-title{
+    margin-top: 30px;
+    font-family: 'NexaBold', sans-serif;
+    font-size: 14px;
+    color: #6017a3;
+    font-weight: 800;
+    line-height: 27px;
+    text-align: justify;
+}
+//@import "block/_slick-theme.scss";
+//@import "block/_slick.scss";
+
+.card-bottom-subtitle{
+    margin-top: 40px;
+    font-family: 'NexaBold',sans-serif;
+    color: #b1b1b1;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+
 }
