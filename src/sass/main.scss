@@ -33,6 +33,11 @@
     font-family: 'PtSans Regular';
     src: url("../fonts/pt-sans.ttf") format('ttf');
 }
+
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url("../fonts/HelveticaRegular.woff") format('woff');
+}
 .header{
     width: 100%;
     background:#f3f3f3;
@@ -136,7 +141,6 @@ form{
 
 .img-clock{
     position: relative;
-
 }
 
 .img-clocks{
@@ -147,7 +151,6 @@ form{
 }
 .nav{
     margin-top: 40px;
-
 }
 
 .nav-menu{
@@ -155,26 +158,45 @@ form{
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-
 }
 .menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 164px;
     height: 113px;
     background: #fefefe;
     border: 1px solid #d4d4d4;
-    padding-top: 20px;
-    font-size: 17px;
-    font-family: "PtSans Bold",sans-serif;
-    font-weight: bold;
-    color: #707070;
+    border-bottom: 5px solid #701dbb ;
     //border-bottom-color: #701dbb;
     //border-bottom-style: solid;
-    border-bottom: 10px solid #701dbb ;
     z-index: 2;
+    &:hover {
+        border-bottom: 13px solid #701dbb ;
+        transition: all 0.6s;
+        height: 125px;
+        width: 170px;
+    }
+    & a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "PtSans Bold",sans-serif;
+        font-weight: bold;
+        color: #707070;
+        font-size: 17px;
+        padding-top: 20px;
+        text-decoration: none;
 
+        &:hover{
+            color: #701dbb;
+            transition: all 0.7s;
+
+            i {
+             color: #701dbb;
+                transition: all 0.7s;
+            }
+        }
+
+    }
 }
 .fas {
     color: #7d7d7d;
@@ -186,7 +208,8 @@ form{
     background: url("../img/bridge.png") center center/ cover no-repeat;
     height: 640px;
     padding: 238px 178px;
-    margin-top: -20px;
+    margin-top: -12px;
+
 }
 
 .text-container{
@@ -563,8 +586,7 @@ form{
     line-height: 27px;
     text-align: justify;
 }
-//@import "block/_slick-theme.scss";
-//@import "block/_slick.scss";
+
 
 .card-bottom-subtitle{
     margin-top: 40px;
@@ -573,5 +595,121 @@ form{
     font-size: 15px;
     line-height: 25px;
     text-align: justify;
+}
 
+
+.footer{
+    padding: 30px 0 250px 0;
+    background: #373737;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-menu{
+    width: 410px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    & li{
+        margin-top: 14px;
+        border-right: 1px solid white;
+        padding-right: 25px;
+
+        &:last-child{
+            border-right: none;
+            padding-right: 0;
+        }
+    }
+
+    & a{
+        font-family: 'NexaXBold', sans-serif;
+        font-size: 12px;
+        color: #ffffff;
+        text-decoration: none;
+        padding-top: 10px ;
+        padding-bottom: 14px;
+
+        &:hover{
+            border-bottom: 5px solid #914dcf;
+            transition: all 0.4s;
+        }
+    }
+}
+
+.footer-description{
+    font-family: 'HelveticaRegular',sans-serif;
+    font-size: 12px;
+    color: #cdcdcd;
+    width: 460px;
+    margin-top: 40px;
+    line-height: 25px;
+    text-align: justify;
+}
+.social-icons{
+    margin-top: 65px;
+}
+
+.social-menu{
+  display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+
+    & a{
+        font-family: 'PtSans Bold',sans-serif;
+        color:#ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        padding-right: 36px;
+
+    }
+}
+
+.padding{
+    padding-right: 6px;
+}
+.fa-rss{
+    font-size: 16px;
+    color: #ffffff;
+}
+.fa-envelope{
+    font-size: 16px;
+    color: #ffffff;
+}
+//@import "block/_slick-theme.scss";
+//@import "block/_slick.scss";
+
+.menu-information{
+    margin-top: 50px;
+}
+
+.about-menu{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+
+    & a{
+    font-family: 'HelveticaRegular', sans-serif;
+    font-size: 12px;
+     color: #ffffff;
+     padding: 0 15px 0 0;
+     text-decoration: none;
+    }
+}
+
+.footer-descr{
+    font-family: 'HelveticaRegular',sans-serif;
+    font-size: 11px;
+    color: #6c6c6c;
+    line-height: 21px;
+    margin-top: 30px;
+    width: 760px;
+    text-align: justify;
 }
