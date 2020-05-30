@@ -222,7 +222,7 @@ form{
         width: 170px;
         margin: -10px -5px -5px -5px;
         z-index: 4;
-        transition: all 0.5s;
+        //transition: all 0.2s;
         transform: scale(1, 1);
         a{
            color: #701dbb;
@@ -666,7 +666,26 @@ form{
     justify-content: space-between;
 }
 
+.logo-footer{
+    display: flex;
+}
+.footer-logo-text{
+    margin-left: 10px;
+}
 
+.footer-logo-text-title{
+    font-family: 'NexaBlack', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+.footer-logo-text-subtitle{
+    font-family: 'PTSansItalick', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #ffffff;
+}
 .footer-menu{
     width: 410px;
 }
@@ -697,7 +716,7 @@ form{
 
         &:hover{
             border-bottom: 5px solid #914dcf;
-            transition: all 0.4s;
+            transition: all 0.2s;
         }
     }
 }
